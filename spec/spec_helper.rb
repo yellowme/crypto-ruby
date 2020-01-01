@@ -3,4 +3,6 @@ require 'simplecov'
 
 require 'crypto'
 
-SimpleCov.start { add_filter '/spec/' }
+Crypto.secret_key_base = 'xxxxx'
+
+SimpleCov.start

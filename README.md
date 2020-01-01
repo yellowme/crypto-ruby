@@ -1,2 +1,2 @@
 # crypto-ruby
-Ruby crypto utilities
+Crypto is Yellowme's ruby crypto & security utilities gem

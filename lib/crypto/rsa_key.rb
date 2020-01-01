@@ -1,6 +1,3 @@
-require 'openssl'
-require 'open3'
-
 module Crypto
   #
   # Clase para crear llaves privadas, en formato X509 no PKCS7

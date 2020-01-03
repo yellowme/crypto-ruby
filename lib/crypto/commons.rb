@@ -54,5 +54,11 @@ module Crypto
     def self.sha256(secret_key, text)
       OpenSSL::HMAC.hexdigest('sha256', secret_key, text)
     end
+
+    def self.rsa_seal(private_key, passphrase, text)
+      text = text.to_s unless text.is_a? String
+      key = Crypto::RSAKey.new private_key, passphrase
+      key.seal(text)
+    end
   end
 end

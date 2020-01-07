@@ -5,12 +5,14 @@ require "crypto/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |spec|
-  spec.name        = "crypto-ruby"
+  spec.name        = "crypto_yellowme"
   spec.version     = Crypto::VERSION
   spec.date        = '2019-12-10'
-  spec.summary     = "Crypto is Yellowme's ruby crypto & security utilities gem"
+  spec.summary     = "Crypto is Yellowme's lib for crypto & security"
   spec.description = "Crypto is Yellowme's ruby crypto & security utilities gem"
-  spec.files       = ["lib/crypto.rb"]
+  spec.files       = `git ls-files`.split($/)
+  spec.executables = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  spec.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
   spec.authors     = ["Yellowme"]
   spec.email       = 'hola@yellowme.mx'
   spec.homepage    = 'https://github.com/yellowme/crypto-ruby'

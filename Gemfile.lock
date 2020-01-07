@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    crypto-ruby (0.3.0)
+    crypto_yellowme (0.3.0)
       activemodel (~> 5.2.0)
       activesupport (~> 5.0)
       bcrypt (~> 3.1.7)
@@ -50,7 +50,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  crypto-ruby!
+  crypto_yellowme!
   rspec
   simplecov
 

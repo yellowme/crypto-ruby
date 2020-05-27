@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.license      = 'MIT'
 
   spec.add_dependency "bcrypt", "~> 3.1.7"
-  spec.add_dependency 'activesupport', '~> 5.0'
+  spec.add_dependency 'activesupport', '>= 5', '< 7'
   spec.add_dependency "activemodel", "~> 5.2"
 
   spec.add_development_dependency "rspec", "~> 3.8"
